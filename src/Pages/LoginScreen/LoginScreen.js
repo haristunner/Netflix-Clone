@@ -14,7 +14,7 @@ export const LoginScreen = () => {
                     alt=""
                     className='loginScreen-logo'
                 />
-                <button className='loginScreen-btn'>
+                <button className='loginScreen-btn' onClick={() => setSignIn(true)}>
                     Sign In
                 </button>
                 <div className="loginScreen-gradient"></div>

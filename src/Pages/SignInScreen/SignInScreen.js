@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import "./SignInScreen.css"
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from '../../firebase'
+import { useNavigate } from 'react-router-dom'
+import { HomeScreen } from '../HomeScreen/HomeScreen'
 
 export const SignInScreen = () => {
 
+    const navigate = useNavigate();
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [logIn, isLogIn] = useState(false)
 
     const register = (e) => {
         e.preventDefault()
@@ -18,7 +23,6 @@ export const SignInScreen = () => {
             .catch((err) => {
                 alert(err.message)
             })
-
     }
 
     const signIn = (e) => {
@@ -26,11 +30,16 @@ export const SignInScreen = () => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then((signInUser) => {
-                console.log(signInUser)
+                isLogIn(true)
             })
             .catch((err) => {
                 alert(err.message)
             })
+    }
+
+    if (logIn) {
+        navigate('/home')
+        isLogIn(false);
     }
 
     return (
