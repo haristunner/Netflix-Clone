@@ -2,6 +2,8 @@
     min-height: 100vh;
     color: beige;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .profileScreen-card {
@@ -10,25 +12,22 @@
     justify-content: center;
     min-height: 100vh;
     flex-direction: column;
+    gap: 15px;
 }
 
-.profileScreen-card>img {
+.ProfileScreen>img {
     position: absolute;
-    top: 50px;
+    top: 30px;
     height: 200px;
+    width: 370px;
 }
 
 .profileScreen-card>h1 {
-    position: absolute;
-    top: 35%;
-    font-size: 2.1rem;
-    max-width: 95%;
-    width: fit-content;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .profileScreen-card>h4 {
-    position: absolute;
-    top: 43%;
     font-weight: bold;
     opacity: 0.3;
     font-size: 21px;
@@ -42,6 +41,5 @@
     background-color: #e50914;
     font-weight: 600;
     padding: 10px;
-    position: absolute;
-    top: 70%;
+    margin-top: 100px;
 }
