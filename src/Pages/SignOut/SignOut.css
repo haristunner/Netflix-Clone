@@ -1,45 +1,33 @@
 .ProfileScreen {
     min-height: 100vh;
-    color: beige;
+    color: #fff;
     position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.profileScreen-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    flex-direction: column;
-    gap: 15px;
+    text-align: center;
 }
 
 .ProfileScreen>img {
-    position: absolute;
-    top: 30px;
     height: 200px;
     width: 370px;
 }
 
-.profileScreen-card>h1 {
-    font-size: 1.8rem;
-    text-align: center;
+.profileScreen-card {
+    line-height: 3rem;
 }
 
 .profileScreen-card>h4 {
+    opacity: 0.4;
     font-weight: bold;
-    opacity: 0.3;
     font-size: 21px;
 }
 
 .profileScreen-card>button {
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    color: #fff;
     background-color: #e50914;
+    padding: 10px 10px;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 10px;
-    /* margin-top: 100px; */
+    border-radius: 2px;
+    margin-top: 10%;
+    cursor: pointer;
 }

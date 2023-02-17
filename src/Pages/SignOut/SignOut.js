@@ -16,7 +16,7 @@ export const SignOut = () => {
 
             <div className="profileScreen-card">
                 <h1>Thanks for visiting my page.</h1>
-                <h4>©Hari Prasath</h4>
+                <h4>©Hari Prasath-2023</h4>
                 <button onClick={signOut}>Sign out</button>
             </div>
         </div>
