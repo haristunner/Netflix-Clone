@@ -6,12 +6,15 @@
     scroll-behavior: smooth;
 }
 
+
+
 .loginScreen-logo {
     position: fixed;
     object-fit: contain;
     left: 0;
     width: 150px;
     padding-left: 20px;
+    top: 15px;
 }
 
 .loginScreen-btn {
