@@ -12,7 +12,7 @@ export const SignOut = () => {
 
     return (
         <div className='ProfileScreen'>
-            <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
+            <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="" />
 
             <div className="profileScreen-card">
                 <h1>Thanks for visiting my page.</h1>
