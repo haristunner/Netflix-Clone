@@ -10,7 +10,7 @@ export const LoginScreen = () => {
         <div className='loginScreen'>
             <div className="loginScreen-background">
                 <img
-                    src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
+                    src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
                     alt=""
                     className='loginScreen-logo'
                 />
